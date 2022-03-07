@@ -86,12 +86,26 @@ def get_AllAddConfirmed_data():
         dead_add.append(f)
     return jsonify({"day": day, "confirm_add": confirm_add, "confirm_now": confirm_now, "suspect_add": suspect_add, "heal_add": heal_add,"dead_add":dead_add})
 
-# 安徽数据
+# 各省份数据
 @app.route("/anhui")
 def get_anhui_data():
     res = []
     for tup in utils.get_anhui_data():
         res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+
+@app.route("/aomen")
+def get_aomen_data():
+    res = []
+    for tup in utils.get_aomen_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+
+@app.route("/provinces")
+def get_provinces_data():
+    res = []
+    for tup in utils.get_provinces_data():
+        res.append({"province":tup[0],"name": tup[1], "value": int(tup[2])})
     return jsonify({"data": res})
 
 if __name__ == '__main__':

@@ -82,5 +82,72 @@ def get_anhui_data():
     sql="SELECT city,confirm FROM details where province='安徽' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
     res = query(sql)
     return res
+def get_aomen_data():
+    sql="SELECT city,confirm FROM details where province='澳门' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_beijing_data():
+    sql="SELECT city,confirm FROM details where province='北京' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_chongqing_data():
+    sql="SELECT city,confirm FROM details where province='重庆' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_fujian_data():
+    sql="SELECT city,confirm FROM details where province='福建' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_gansu_data():
+    sql="SELECT city,confirm FROM details where province='甘肃' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_guangdong_data():
+    sql="SELECT city,confirm FROM details where province='广东' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_guangxi_data():
+    sql="SELECT city,confirm FROM details where province='广西' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_guizhou_data():
+    sql="SELECT city,confirm FROM details where province='贵州' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_hainan_data():
+    sql="SELECT city,confirm FROM details where province='海南' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_hebei_data():
+    sql="SELECT city,confirm FROM details where province='河北' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_heilongjiang_data():
+    sql="SELECT city,confirm FROM details where province='黑龙江' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_henan_data():
+    sql="SELECT city,confirm FROM details where province='河南' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_hubei_data():
+    sql="SELECT city,confirm FROM details where province='湖北' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_hunan_data():
+    sql="SELECT city,confirm FROM details where province='湖南' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_jiangsu_data():
+    sql="SELECT city,confirm FROM details where province='江苏' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_provinces_data():
+    sql="SELECT province,city,confirm FROM details where province='澳门' AND  update_time=(SELECT update_time FROM details ORDER BY update_time DESC	LIMIT 1) AND city!='境外输入'"
+    res = query(sql)
+    return res
+def get_allprovince():
+    
+
 if __name__ == "__main__":
-    print(get_ProvinceConfirmed_data())
+    print(get_anhui_data())
