@@ -101,12 +101,203 @@ def get_aomen_data():
         res.append({"name": tup[0], "value": int(tup[1])})
     return jsonify({"data": res})
 
-@app.route("/provinces")
-def get_provinces_data():
+@app.route("/beijing")
+def get_beijing_data():
     res = []
-    for tup in utils.get_provinces_data():
-        res.append({"province":tup[0],"name": tup[1], "value": int(tup[2])})
+    for tup in utils.get_beijing_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
     return jsonify({"data": res})
+
+@app.route("/chongqing")
+def get_chongqing_data():
+    res = []
+    for tup in utils.get_chongqing_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+
+@app.route("/fujian")
+def get_fujian_data():
+    res = []
+    for tup in utils.get_fujian_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+
+@app.route("/gansu")
+def get_gansu_data():
+    res = []
+    for tup in utils.get_gansu_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/guangdong")
+def get_guangdong_data():
+    res = []
+    for tup in utils.get_guangdong_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/guangxi")
+def get_guangxi_data():
+    res = []
+    for tup in utils.get_guangxi_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/guizhou")
+def get_guizhou_data():
+    res = []
+    for tup in utils.get_guizhou_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/hainan")
+def get_hainan_data():
+    res = []
+    for tup in utils.get_hainan_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/hebei")
+def get_hebei_data():
+    res = []
+    for tup in utils.get_hebei_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/heilongjiang")
+def get_heilongjiang_data():
+    res = []
+    for tup in utils.get_heilongjiang_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/henan")
+def get_henan_data():
+    res = []
+    for tup in utils.get_henan_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/hubei")
+def get_hubei_data():
+    res = []
+    for tup in utils.get_hubei_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/hunan")
+def get_hunan_data():
+    res = []
+    for tup in utils.get_hunan_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/jiangsu")
+def get_jiangsu_data():
+    res = []
+    for tup in utils.get_jiangsu_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/jiangxi")
+def get_jiangxi_data():
+    res = []
+    for tup in utils.get_jiangxi_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/jilin")
+def get_jilin_data():
+    res = []
+    for tup in utils.get_jilin_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/liaoning")
+def get_liaoning_data():
+    res = []
+    for tup in utils.get_liaoning_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/neimenggu")
+def get_neimenggu_data():
+    res = []
+    for tup in utils.get_neimenggu_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/ningxia")
+def get_ningxia_data():
+    res = []
+    for tup in utils.get_ningxia_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/qinghai")
+def get_qinghai_data():
+    res = []
+    for tup in utils.get_qinghai_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/shandong")
+def get_shandong_data():
+    res = []
+    for tup in utils.get_shandong_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/shanghai")
+def get_shanghai_data():
+    res = []
+    for tup in utils.get_shanghai_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/shanxi")
+def get_shanxi_data():
+    res = []
+    for tup in utils.get_shanxi_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/shanxizizhiqu")
+def get_shanxi1_data():
+    res = []
+    for tup in utils.get_shanxi1_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/sichuan")
+def get_sichuan_data():
+    res = []
+    for tup in utils.get_sichuan_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/taiwan")
+def get_taiwan_data():
+    res = []
+    for tup in utils.get_taiwan_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/tianjin")
+def get_tianjin_data():
+    res = []
+    for tup in utils.get_tianjin_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/xianggang")
+def get_xianggang_data():
+    res = []
+    for tup in utils.get_xianggang_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/xinjiang")
+def get_xinjiang_data():
+    res = []
+    for tup in utils.get_xinjiang_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/xizang")
+def get_xizang_data():
+    res = []
+    for tup in utils.get_xizang_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/yunnan")
+def get_yunnan_data():
+    res = []
+    for tup in utils.get_yunnan_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+@app.route("/zhejiang")
+def get_zhejiang_data():
+    res = []
+    for tup in utils.get_zhejiang_data():
+        res.append({"name": tup[0], "value": int(tup[1])})
+    return jsonify({"data": res})
+
+
 
 if __name__ == '__main__':
     app.run()
