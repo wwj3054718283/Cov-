@@ -29,7 +29,7 @@ def get_home_data():
     return res[0]
 # 主页地图数据
 def get_home_map():
-    sql="select province,SUM(confirm_add),confirm from details WHERE update_time=(SELECT update_time FROM details ORDER BY update_time DESC LIMIT 1) GROUP BY province"
+    sql="select province,SUM(confirm_now),SUM(confirm) from details WHERE update_time=(SELECT update_time FROM details ORDER BY update_time DESC LIMIT 1) GROUP BY province"
     res = query(sql)
     return res
 # 数据图表-统计数据 数据集
